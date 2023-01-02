@@ -18,7 +18,7 @@ if (navigator.serviceWorker) {
 /**
  * This function displays an alert.
  */
-function cookie() {
+function myButtonClickedCookie() {
   if (localStorage.hits) {
     localStorage.hits++
   } else {
