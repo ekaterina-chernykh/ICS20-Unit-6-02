@@ -20,7 +20,7 @@ if (navigator.serviceWorker) {
  */
 function cookie() {
   if (localStorage.hits) {
-    localStorage.hits = localStorage.hits++
+    localStorage.hits++
   } else {
     localStorage.hits = 1
   }
