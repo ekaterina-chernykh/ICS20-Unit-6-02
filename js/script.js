@@ -18,12 +18,13 @@ if (navigator.serviceWorker) {
 /**
  * This function displays an alert.
  */
-function myButtonClicked() {
-  // input
-  const height = parseFloat(document.getElementById("height").value)
+function cookie() {
+  if( localStorage.hits ) {
+    localStorage.hits = localStorage ++
+  }
+  else {
+    localStorage.hits = 1
+  }
 
-  // process
-  const volume = 2
-  // output
-  document.getElementById("volume").innerHTML = "Volume is: " + volume + "mm³"
+  document.getElementById("amount-of-cookies").innerHTML = "Your cookie count is: " + localStorage.hits
 }
