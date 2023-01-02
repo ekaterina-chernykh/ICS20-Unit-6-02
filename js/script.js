@@ -19,12 +19,12 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function cookie() {
-  if( localStorage.hits ) {
-    localStorage.hits = localStorage ++
-  }
-  else {
+  if (localStorage.hits) {
+    localStorage.hits = localStorage++
+  } else {
     localStorage.hits = 1
   }
 
-  document.getElementById("amount-of-cookies").innerHTML = "Your cookie count is: " + localStorage.hits
+  document.getElementById("amount-of-cookies").innerHTML =
+    "Your cookie count is: " + localStorage.hits
 }
